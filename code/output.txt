@@ -1,0 +1,147 @@
+
+Correlations for rank:
+  overall_score: correlation = -0.89, p-value = 0.00 ***
+  research_score: correlation = -0.84, p-value = 0.00 ***
+  teaching_score: correlation = -0.82, p-value = 0.00 ***
+  citations_score: correlation = -0.70, p-value = 0.00 ***
+  intl_students: correlation = -0.38, p-value = 0.00 ***
+  industry_income_score: correlation = -0.29, p-value = 0.00 ***
+  international_outlook_score: correlation = -0.27, p-value = 0.00 ***
+  student_staff_ratio: correlation = 0.24, p-value = 0.00 ***
+  year: correlation = 0.15, p-value = 0.00 ***
+  number_students: correlation = -0.15, p-value = 0.00 ***
+
+Correlations for overall_score:
+  rank: correlation = -0.89, p-value = 0.00 ***
+  research_score: correlation = 0.86, p-value = 0.00 ***
+  teaching_score: correlation = 0.81, p-value = 0.00 ***
+  citations_score: correlation = 0.72, p-value = 0.00 ***
+  intl_students: correlation = 0.39, p-value = 0.00 ***
+  industry_income_score: correlation = 0.34, p-value = 0.00 ***
+  international_outlook_score: correlation = 0.32, p-value = 0.00 ***
+  student_staff_ratio: correlation = -0.24, p-value = 0.00 ***
+  year: correlation = 0.19, p-value = 0.00 ***
+  number_students: correlation = 0.14, p-value = 0.00 ***
+
+Correlations for teaching_score:
+  research_score: correlation = 0.86, p-value = 0.00 ***
+  rank: correlation = -0.82, p-value = 0.00 ***
+  overall_score: correlation = 0.81, p-value = 0.00 ***
+  citations_score: correlation = 0.43, p-value = 0.00 ***
+  industry_income_score: correlation = 0.38, p-value = 0.00 ***
+  student_staff_ratio: correlation = -0.34, p-value = 0.00 ***
+  intl_students: correlation = 0.20, p-value = 0.00 ***
+  number_students: correlation = 0.20, p-value = 0.00 ***
+  international_outlook_score: correlation = 0.03, p-value = 0.07 *
+  year: correlation = 0.02, p-value = 0.28 
+
+Correlations for research_score:
+  overall_score: correlation = 0.86, p-value = 0.00 ***
+  teaching_score: correlation = 0.86, p-value = 0.00 ***
+  rank: correlation = -0.84, p-value = 0.00 ***
+  industry_income_score: correlation = 0.45, p-value = 0.00 ***
+  citations_score: correlation = 0.45, p-value = 0.00 ***
+  intl_students: correlation = 0.31, p-value = 0.00 ***
+  international_outlook_score: correlation = 0.22, p-value = 0.00 ***
+  number_students: correlation = 0.20, p-value = 0.00 ***
+  student_staff_ratio: correlation = -0.16, p-value = 0.00 ***
+  year: correlation = 0.08, p-value = 0.00 ***
+
+Correlations for citations_score:
+  overall_score: correlation = 0.72, p-value = 0.00 ***
+  rank: correlation = -0.70, p-value = 0.00 ***
+  research_score: correlation = 0.45, p-value = 0.00 ***
+  teaching_score: correlation = 0.43, p-value = 0.00 ***
+  intl_students: correlation = 0.32, p-value = 0.00 ***
+  international_outlook_score: correlation = 0.30, p-value = 0.00 ***
+  student_staff_ratio: correlation = -0.23, p-value = 0.00 ***
+  year: correlation = 0.18, p-value = 0.00 ***
+  industry_income_score: correlation = 0.05, p-value = 0.00 ***
+  number_students: correlation = 0.02, p-value = 0.24 
+
+Correlations for industry_income_score:
+  research_score: correlation = 0.45, p-value = 0.00 ***
+  teaching_score: correlation = 0.38, p-value = 0.00 ***
+  overall_score: correlation = 0.34, p-value = 0.00 ***
+  rank: correlation = -0.29, p-value = 0.00 ***
+  year: correlation = 0.16, p-value = 0.00 ***
+  citations_score: correlation = 0.05, p-value = 0.00 ***
+  number_students: correlation = 0.03, p-value = 0.04 **
+  intl_students: correlation = 0.02, p-value = 0.16 
+  international_outlook_score: correlation = 0.01, p-value = 0.38 
+  student_staff_ratio: correlation = 0.00, p-value = 0.98 
+
+Correlations for international_outlook_score:
+  intl_students: correlation = 0.82, p-value = 0.00 ***
+  overall_score: correlation = 0.32, p-value = 0.00 ***
+  citations_score: correlation = 0.30, p-value = 0.00 ***
+  rank: correlation = -0.27, p-value = 0.00 ***
+  year: correlation = 0.24, p-value = 0.00 ***
+  research_score: correlation = 0.22, p-value = 0.00 ***
+  number_students: correlation = -0.15, p-value = 0.00 ***
+  student_staff_ratio: correlation = 0.11, p-value = 0.00 ***
+  teaching_score: correlation = 0.03, p-value = 0.07 *
+  industry_income_score: correlation = 0.01, p-value = 0.38 
+
+Correlations for number_students:
+  student_staff_ratio: correlation = 0.31, p-value = 0.00 ***
+  research_score: correlation = 0.20, p-value = 0.00 ***
+  teaching_score: correlation = 0.20, p-value = 0.00 ***
+  intl_students: correlation = -0.18, p-value = 0.00 ***
+  international_outlook_score: correlation = -0.15, p-value = 0.00 ***
+  rank: correlation = -0.15, p-value = 0.00 ***
+  overall_score: correlation = 0.14, p-value = 0.00 ***
+  industry_income_score: correlation = 0.03, p-value = 0.04 **
+  year: correlation = 0.02, p-value = 0.17 
+  citations_score: correlation = 0.02, p-value = 0.24 
+
+Correlations for student_staff_ratio:
+  teaching_score: correlation = -0.34, p-value = 0.00 ***
+  number_students: correlation = 0.31, p-value = 0.00 ***
+  overall_score: correlation = -0.24, p-value = 0.00 ***
+  rank: correlation = 0.24, p-value = 0.00 ***
+  citations_score: correlation = -0.23, p-value = 0.00 ***
+  research_score: correlation = -0.16, p-value = 0.00 ***
+  international_outlook_score: correlation = 0.11, p-value = 0.00 ***
+  intl_students: correlation = -0.07, p-value = 0.00 ***
+  year: correlation = 0.02, p-value = 0.21 
+  industry_income_score: correlation = 0.00, p-value = 0.98 
+
+Correlations for intl_students:
+  international_outlook_score: correlation = 0.82, p-value = 0.00 ***
+  overall_score: correlation = 0.39, p-value = 0.00 ***
+  rank: correlation = -0.38, p-value = 0.00 ***
+  citations_score: correlation = 0.32, p-value = 0.00 ***
+  research_score: correlation = 0.31, p-value = 0.00 ***
+  teaching_score: correlation = 0.20, p-value = 0.00 ***
+  number_students: correlation = -0.18, p-value = 0.00 ***
+  year: correlation = 0.09, p-value = 0.00 ***
+  student_staff_ratio: correlation = -0.07, p-value = 0.00 ***
+  industry_income_score: correlation = 0.02, p-value = 0.16 
+
+Correlations for year:
+  international_outlook_score: correlation = 0.24, p-value = 0.00 ***
+  overall_score: correlation = 0.19, p-value = 0.00 ***
+  citations_score: correlation = 0.18, p-value = 0.00 ***
+  industry_income_score: correlation = 0.16, p-value = 0.00 ***
+  rank: correlation = 0.15, p-value = 0.00 ***
+  intl_students: correlation = 0.09, p-value = 0.00 ***
+  research_score: correlation = 0.08, p-value = 0.00 ***
+  number_students: correlation = 0.02, p-value = 0.17 
+  student_staff_ratio: correlation = 0.02, p-value = 0.21 
+  teaching_score: correlation = 0.02, p-value = 0.28 
+
+Variables ordered by total influence:
+overall_score: unnormalized influence = 9.83, normalized influence = 1.00
+rank: unnormalized influence = 9.46, normalized influence = 0.95
+research_score: unnormalized influence = 8.71, normalized influence = 0.86
+teaching_score: unnormalized influence = 8.06, normalized influence = 0.78
+citations_score: unnormalized influence = 6.67, normalized influence = 0.60
+intl_students: unnormalized influence = 5.23, normalized influence = 0.42
+international_outlook_score: unnormalized influence = 4.88, normalized influence = 0.38
+student_staff_ratio: unnormalized influence = 3.25, normalized influence = 0.17
+industry_income_score: unnormalized influence = 3.24, normalized influence = 0.17
+number_students: unnormalized influence = 2.65, normalized influence = 0.10
+year: unnormalized influence = 1.86, normalized influence = 0.00
+/data2/universities/script2.py:94: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout(pad=2.0)  # Add more padding
