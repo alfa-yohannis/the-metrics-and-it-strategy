@@ -73,7 +73,7 @@
 %%
 %% Submission ID.
 %% Use this when submitting an article to a sponsored event. You'll
-%% receive a unique submission ID from the organizers
+%% receive a unique submission ID from the organisers
 %% of the event, and this ID should be used as the parameter to this command.
 %%\acmSubmissionID{123-A56-BU3}
 
@@ -96,7 +96,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{Deriving IT Strategies from Times Higher Education Rank}
+\title{Deriving IT Strategies from Times Higher Education Ranking}
 
 %%
 %% The "author" command and its associated commands are used to define
@@ -122,13 +122,26 @@
 
 \author{Hidden for Double-blind Review}
 
-%\author{Lars Th{\o}rv{\"a}ld}
+%\author{Alfa Yohannis}
 %\affiliation{%
-%  \institution{The Th{\o}rv{\"a}ld Group}
-%  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
-%  \city{Hekla}
-%  \country{Iceland}}
-%\email{larst@affiliation.org}
+%  \institution{Universitas Pradita}
+%  \city{Tangerang}
+%  \country{Indonesia}}
+%\email{alfa.ryano@gmail.com}
+
+%\author{Alexander Waworuntu}
+%\affiliation{%
+%	\institution{Universitas Multimedia Nusantara}
+%	\city{Tangerang}
+%	\country{Indonesia}}
+%%\email{master.edison@pradita.ac.id}
+%
+%\author{Master Edison Siregar}
+%\affiliation{%
+%	\institution{Universitas Pradita}
+%	\city{Tangerang}
+%	\country{Indonesia}}
+%%\email{master.edison@pradita.ac.id}
 %
 %\author{Valerie B\'eranger}
 %\affiliation{%
@@ -184,13 +197,14 @@
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Trovato and Tobin, et al.}
+
+%\renewcommand{\shortauthors}{Yohannis and Siregar, et al.}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-	This study explores the correlations among key metrics from the Times Higher Education (THE) rankings over a 10-year period to derive actionable IT strategies for universities. Using rigorous analysis, including Spearman's Rank Correlation, the research identifies the most influential variables affecting institutional performance, such as research and teaching scores, citations, and international outlook. The findings underscore the importance of aligning IT investments with these critical areas to enhance institutional rankings and competitiveness. Based on the analysis, targeted IT strategies are recommended to support the performance of higher education institutions based on the influential variables.
+	This study explores the correlations among key metrics from the Times Higher Education (THE) rankings over a 10-year period to derive actionable IT strategies for universities. Using rigorous analysis, including non-parametric correlation, the research identifies the most influential variables affecting institutional performance, such as research and teaching scores, citations, and internationalisation. The findings underscore the importance of aligning IT investments with these critical areas to enhance institutional rankings and competitiveness. Based on the analysis, targeted IT strategies are recommended to support the performance of higher education institutions based on the influential variables.
 \end{abstract}
 
 %%
@@ -289,7 +303,7 @@ The increasing complexity of IT environments has led to the adoption of more sop
 
 \subsection{Use of Rankings and Performance Metrics}
 
-Performance metrics\footnote{The terms `metrics' and `variables' are used interchangeably.} play a pivotal role in shaping IT strategies, particularly in higher education institutions. Rankings such as those provided by Times Higher Education (THE) emphasize variables such as research output, teaching quality, and international collaboration as critical factors influencing university competitiveness. Integrating these metrics into IT strategies enables institutions to align their technological initiatives with objectives that enhance their global standing \cite{times2023methodology}.
+Performance metrics\footnote{The terms `metrics' and `variables' are used interchangeably.} play a pivotal role in shaping IT strategies, particularly in higher education institutions. Rankings such as those provided by Times Higher Education (THE) emphasise variables such as research output, teaching quality, and international collaboration as critical factors influencing university competitiveness. Integrating these metrics into IT strategies enables institutions to align their technological initiatives with objectives that enhance their global standing \cite{times2023methodology}.
 
 Da Silva and Santos \cite{dasilva2014cobit} examined IT governance frameworks and their application in strategic planning, demonstrating that metrics derived from ranking systems like THE can serve as benchmarks for prioritising IT investments. This approach ensures that IT initiatives directly contribute to improving institutional rankings and overall performance.
 
@@ -299,7 +313,7 @@ A complementary perspective is offered by a study on university competitiveness 
 
 Although the direct linkage between THE metrics and IT strategy development is not always explicit, these studies collectively provide actionable insights. Universities can harness IT to implement strategies that enhance performance in areas such as research output, teaching excellence, and global collaboration—key drivers of improved ranking outcomes.
 
-This research builds on these foundations by taking a unique approach. It examines THE metrics and variables over a longitudinal period of 10 or more years, providing a deeper understanding of their correlations and influence on institutional rankings. By identifying the most impactful variables, this study offers a framework for developing IT strategies that specifically address these critical areas. Such targeted strategies ensure that IT investments are optimally aligned with institutional objectives, maximising their impact on performance and ranking outcomes.
+This research builds on these foundations by taking a different approach. It examines THE metrics and variables over a longitudinal period of 10 or more years, providing a deeper understanding of their correlations and influence on institutional rankings. By identifying the most impactful variables, this study offers a framework for developing IT strategies that specifically address these critical areas. Such targeted strategies ensure that IT investments are optimally aligned with institutional objectives, maximising their impact on performance and ranking outcomes.
 
 
 \section{Methodology}
@@ -309,11 +323,13 @@ The research was performed quantitatively, with data collected through web scrap
 
 \subsection{Data Collection and Cleaning}
 
-The data scrapping was achieved by collecting universities' ranks and rank factors by scrapping scores from 2013 to 2023 in the Times Higher Education (THE) website \cite{the2024} and combining it with the data of university ranks obtained from Kaggle \cite{ONeil_2020}\footnote{The contribution of this dataset was minimal.}, producing more than 11-year data span with 711 universities involved. 
+The data scrapping was achieved by collecting universities' ranks and rank factors by scrapping scores from 2013 to 2023 in the Times Higher Education (THE) website \cite{the2024} and combining it with the data of university ranks obtained from Kaggle \cite{ONeil_2020}\footnote{The contribution of this dataset was minimal, mainly for years 2011-2012.}, producing more than 11-year data span with 711 universities involved. 
 
-After collecting the necessary data, it underwent several data-cleaning steps to ensure it was ready for analysis. First, empty numeric values were filled using linear estimation, logarithmic estimation, etc., based on the coefficient of determination $R^{2}$ to estimate the missing values. The filled values were then normalised and added as a new column to the dataset. Secondly, empty non-numeric values were filled with `n/a' to help handle missing non-numeric values in the following steps.
+After collecting the necessary data, it underwent several data-cleaning steps to ensure it was ready for analysis. Empty numeric values were filled using linear estimation, logarithmic estimation, etc., based on the coefficient of determination $R^{2}$ to estimate the missing values. 
+%The filled values were then normalised and added as a new columns to the dataset. 
+%Secondly, empty non-numeric values were filled with `n/a' to help handle missing non-numeric values in the following steps.
 
-Finally, unnecessary columns were removed to streamline the dataset, and only several columns were used in the analysis as variables. These variables were overall score, rank, research score, teaching score, citations score, intl students, international outlook score, student staff ratio, industry income score, number students, year. 
+Moreover, unnecessary columns were removed to streamline the dataset, and only several columns were used in the analysis as variables. These variables were overall score, rank, research score, teaching score, citations score, intl students, international outlook score, student staff ratio, industry income score, number students, and year. 
 
 \subsection{Data Analysis}
 
@@ -322,7 +338,7 @@ Correlations were calculated between the variables. The analysis assessed the st
 \begin{figure*}[t]
 	\centering
 	\includegraphics[width=\linewidth]{figures/correlation_graph.pdf}
-	\caption{Correlation graph between the variables of Times Higher Education Rank. Correlations with }
+	\caption{Correlation graph between the variables of Times Higher Education Rank.}
 	\label{fig:graf_citation}
 \end{figure*}
 
@@ -451,7 +467,7 @@ Weaker correlations include \textit{international students} ($r = 0.20$), \texti
 		Student-to-Staff Ratio & -0.34 & 0.00\textsuperscript{***} \\
 		International Students & 0.20 & 0.00\textsuperscript{***} \\
 		Number of Students & 0.20 & 0.00\textsuperscript{***} \\
-		International Outlook Score & 0.03 & 0.07 * \\
+		International Outlook Score & 0.03 & 0.07\textsuperscript{*} \\
 		Year & 0.02 & 0.28 \\
 		\hline
 	\end{tabular}
@@ -547,7 +563,7 @@ Weaker correlations include \textit{research score} ($r = 0.22$), \textit{number
 		Research Score & 0.22 & 0.00\textsuperscript{***} \\
 		Number of Students & -0.15 & 0.00\textsuperscript{***} \\
 		Student-to-Staff Ratio & 0.11 & 0.00\textsuperscript{***} \\
-		Teaching Score & 0.03 & 0.07 * \\
+		Teaching Score & 0.03 & 0.07\textsuperscript{*} \\
 		Industry Income Score & 0.01 & 0.38 \\
 		\hline
 	\end{tabular}
@@ -607,7 +623,7 @@ Weaker positive correlations are observed for \textit{year} ($r = 0.16$) and \te
 		Rank & -0.29 & 0.00\textsuperscript{***} \\
 		Year & 0.16 & 0.00\textsuperscript{***} \\
 		Citations Score & 0.05 & 0.00\textsuperscript{***} \\
-		Number of Students & 0.03 & 0.04 ** \\
+		Number of Students & 0.03 & 0.04\textsuperscript{**} \\
 		International Students & 0.02 & 0.16 \\
 		International Outlook Score & 0.01 & 0.38 \\
 		Student-to-Staff Ratio & 0.00 & 0.98 \\
@@ -639,7 +655,7 @@ Weaker correlations include \textit{overall score} ($r = 0.14$) and \textit{indu
 		International Outlook Score & -0.15 & 0.00\textsuperscript{***} \\
 		Rank & -0.15 & 0.00\textsuperscript{***} \\
 		Overall Score & 0.14 & 0.00\textsuperscript{***} \\
-		Industry Income Score & 0.03 & 0.04 ** \\
+		Industry Income Score & 0.03 & 0.04\textsuperscript{**} \\
 		Year & 0.02 & 0.17 \\
 		Citations Score & 0.02 & 0.24 \\
 		\hline
@@ -679,7 +695,7 @@ Weaker correlations include \textit{rank} ($r = 0.15$), \textit{international st
 
 \subsection{Analysis of Variables by Total Influence}
 
-The analysis of total influence highlights the hierarchical significance of various factors in determining outcomes (Table \ref{tab:total_influence}). Among the evaluated variables, the \textit{overall score} demonstrates the highest total influence (9.83), followed closely by the \textit{rank} (9.46) and \textit{research score} (8.71). These results emphasize the critical role of performance-driven metrics in shaping institutional success.
+The analysis of total influence highlights the hierarchical significance of various factors in determining outcomes (Table \ref{tab:total_influence}). Among the evaluated variables, the \textit{overall score} demonstrates the highest total influence (9.83), followed closely by the \textit{rank} (9.46) and \textit{research score} (8.71). These results emphasise the critical role of performance-driven metrics in shaping institutional success.
 
 The \textit{teaching score} (8.06) and \textit{citations score} (6.67) also exhibit substantial influence, further underscoring the importance of academic and research excellence. Internationalization-related variables such as \textit{international students} (5.23) and \textit{international outlook score} (4.88) display moderate influence, reflecting their supportive but secondary role in influencing institutional outcomes.
 
@@ -714,9 +730,10 @@ Variables with lower influence include \textit{student-to-staff ratio} (3.25) an
 This section provides IT strategies for universities based on the results of the correlation analysis.
 
 \begin{enumerate}
-	\item \textbf{Prioritize Overall Performance Metrics:} The \textit{overall score} has the highest total influence (\(r = 0.89\)) and is strongly correlated with key metrics like \textit{rank}, \textit{research score}, and \textit{teaching score}. Universities should focus on IT systems that enhance overall institutional performance. Comprehensive platforms integrating research management, teaching quality analysis, and student engagement tracking can optimize institutional operations and improve rankings.
+	\item \textbf{Prioritise Overall Performance Metrics:} The \textit{overall score} has the highest total influence (\(r = 0.89\)) and is strongly correlated with key metrics like \textit{rank}, \textit{research score}, and \textit{teaching score}. Universities should focus on IT systems that enhance overall institutional performance. Comprehensive platforms integrating research management, teaching quality analysis, and student engagement tracking can optimise institutional operations and improve rankings.
 	
-	\item \textbf{Enhance Research Excellence:} Strong correlations exist between \textit{research score} and both \textit{overall score} (\(r = 0.86\)) and \textit{teaching score} (\(r = 0.86\)). Universities should implement advanced research management systems to track high-quality outputs, facilitate collaborations, and provide tools for data analysis. Open-access repositories and bibliometric tools can increase research visibility and impact.
+
+	\item \textbf{Enhance Research Excellence:} Strong correlations are observed between the \textit{research score} and both the \textit{overall score} and \textit{teaching score} (\(r = 0.86\)). Universities should provide tools and services for research, such as high-performance computing, access to quality articles, research management systems, and tools for surveys, simulations, experiments, and data analytics. Open-access repositories and bibliometric tools can boost research visibility and impact.
 	
 	\item \textbf{Strengthen Teaching Quality:} The \textit{teaching score} is highly correlated with \textit{research score} (\(r = 0.86\)) and \textit{overall score} (\(r = 0.81\)). Universities should leverage e-learning platforms, virtual labs, and analytics-driven curriculum improvement tools. These systems can ensure continuous improvement in teaching methodologies and student outcomes.
 	
@@ -724,7 +741,7 @@ This section provides IT strategies for universities based on the results of the
 	
 	\item \textbf{Promote Internationalization:} The \textit{international outlook score} (\(r = 0.82\) with \textit{international students}) and \textit{international students} (\(r = 0.39\) with \textit{overall score}) highlight the importance of global engagement. Universities can invest in multilingual systems, international student support platforms, and global collaboration networks to attract and retain international talent.
 	
-	\item \textbf{Optimize Resource Allocation:} The correlation between \textit{number of students} and \textit{student-to-staff ratio} (\(r = 0.31\)) indicates the need for scalable resource management. Integrated ERP systems can help balance student population growth with faculty and infrastructure needs. Predictive analytics tools can forecast trends, aiding in planning and maintaining optimal resource allocation.
+	\item \textbf{Optimise Resource Allocation:} The correlation between \textit{number of students} and \textit{student-to-staff ratio} (\(r = 0.31\)) indicates the need for scalable resource management. Integrated ERP systems can help balance student population growth with faculty and infrastructure needs. Predictive analytics tools can forecast trends, aiding in planning and maintaining optimal resource allocation.
 	
 	\item \textbf{Leverage Industry Collaborations:} The \textit{industry income score} (\(r = 0.45\) with \textit{research score}) suggests that strong research output attracts industry partnerships. Universities should implement relationship management systems to facilitate collaboration with industries, support technology transfer, and promote applied research activities.
 	
@@ -732,10 +749,10 @@ This section provides IT strategies for universities based on the results of the
 	
 	\item \textbf{Support International Student Experience:} The negative correlation between \textit{number of students} and \textit{international students} (\(r = -0.18\)) indicates challenges in maintaining diversity. Personalised support platforms and targeted recruitment strategies using IT tools can enhance the experience of international students and attract a global audience.
 	
-	\item \textbf{Focus on Rankings Improvement:} The strong negative correlation between \textit{rank} and \textit{overall score} (\(r = -0.89\)) emphasizes that improving performance metrics directly impacts rankings. Universities should align IT investments to enhance metrics like research, teaching, and internationalization, which are critical drivers of rank improvement.
+	\item \textbf{Focus on Rankings Improvement:} The strong negative correlation between \textit{rank} and \textit{overall score} (\(r = -0.89\)) emphasises that improving performance metrics directly impacts rankings. Universities should align IT investments to enhance metrics like research, teaching, and internationalization, which are critical drivers of rank improvement.
 	
-	\item \textbf{Utilize Data Analytics:} Implement advanced analytics to monitor, predict, and optimize performance metrics like \textit{research score} and \textit{teaching score}, enabling data-driven strategies for improving institutional outcomes and rankings.
-
+	\item \textbf{Leverage Data Analytics for Strategic Decision-Making:} The significant correlations between various institutional metrics, such as \textit{research score}, \textit{teaching score}, and \textit{overall score}, highlight the importance of understanding complex relationships within the data. Universities should implement advanced data analytics platforms to monitor and predict the impact of changes in performance metrics on institutional outcomes. Predictive modeling and machine learning can further assist in identifying areas requiring improvement, enabling data-driven strategies to enhance institutional performance and rankings.
+	
 \end{enumerate}
 
 
