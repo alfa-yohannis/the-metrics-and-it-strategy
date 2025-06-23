@@ -1,0 +1,347 @@
+university,country,continent
+Harvard University,United States,North America
+California Institute of Technology,United States,North America
+Massachusetts Institute of Technology,United States,North America
+Stanford University,United States,North America
+Princeton University,United States,North America
+University of Cambridge,United Kingdom,Europe
+University of Oxford,United Kingdom,Europe
+University of California-Berkeley,United States,North America
+Imperial College London,United Kingdom,Europe
+Yale University,United States,North America
+University of California-Los Angeles,United States,North America
+Johns Hopkins University,United States,North America
+Cornell University,United States,North America
+University of Toronto,Canada,North America
+Columbia University,United States,North America
+University of Pennsylvania,United States,North America
+Carnegie Mellon University,United States,North America
+University of Hong Kong,Hong Kong,Asia
+University of Washington,United States,North America
+Duke University,United States,North America
+Northwestern University,United States,North America
+Georgia Institute of Technology,United States,North America
+University of California-Santa Barbara,United States,North America
+University of British Columbia,Canada,North America
+University of North Carolina at Chapel Hill,United States,North America
+University of California-San Diego,United States,North America
+University of Illinois at Urbana-Champaign,United States,North America
+National University of Singapore,Singapore,Asia
+McGill University,Canada,North America
+University of Melbourne,Australia,Oceania
+Peking University,China,Asia
+Washington University in St Louis,United States,North America
+École Polytechnique,France,Europe
+University of Edinburgh,United Kingdom,Europe
+Australian National University,Australia,Oceania
+Karolinska Institute,Sweden,Europe
+University of Göttingen,Germany,Europe
+Rice University,United States,North America
+École Polytechnique Fédérale de Lausanne,Switzerland,Europe
+University of California-Irvine,United States,North America
+University of Science and Technology of China,China,Asia
+Vanderbilt University,United States,North America
+University of Minnesota,United States,North America
+Tufts University,United States,North America
+University of California-Davis,United States,North America
+Brown University,United States,North America
+University of Massachusetts,United States,North America
+Kyoto University,Japan,Asia
+Tsinghua University,China,Asia
+Boston University,United States,North America
+New York University,United States,North America
+Emory University,United States,North America
+LMU Munich,Germany,Europe
+University of Notre Dame,United States,North America
+Case Western Reserve University,United States,North America
+University of Colorado Boulder,United States,North America
+University of Bristol,United Kingdom,Europe
+University of California-Santa Cruz,United States,North America
+University of Adelaide,Australia,Oceania
+University of Southern California,United States,North America
+William & Mary,United States,North America
+Trinity College Dublin,Ireland,Europe
+King’s College London,United Kingdom,Europe
+Stony Brook University,United States,North America
+Korea Advanced Institute of Science and Technology (KAIST),South Korea,Asia
+University of Sussex,United Kingdom,Europe
+The University of Queensland,Australia,Oceania
+University of York,United Kingdom,Europe
+University of Utah,United States,North America
+Durham University,United Kingdom,Europe
+London School of Economics and Political Science,United Kingdom,Europe
+University of Manchester,United Kingdom,Europe
+Royal Holloway-University of London,United Kingdom,Europe
+Lund University,Sweden,Europe
+University of Southampton,United Kingdom,Europe
+University of Zurich,Switzerland,Europe
+Wake Forest University,United States,North America
+McMaster University,Canada,North America
+University College Dublin,Ireland,Europe
+George Washington University,United States,North America
+University of Arizona,United States,North America
+University of Basel,Switzerland,Europe
+University of Maryland-College Park,United States,North America
+Dartmouth College,United States,North America
+École Normale Supérieure de Lyon,France,Europe
+Technical University of Munich,Germany,Europe
+University of Helsinki,Finland,Europe
+University of St Andrews,United Kingdom,Europe
+Rensselaer Polytechnic Institute,United States,North America
+National Tsing Hua University,Taiwan,Asia
+University of Cape Town,South Africa,Africa
+Seoul National University,South Korea,Asia
+Hong Kong Baptist University,Hong Kong,Asia
+Bilkent University,Turkey,Asia
+Tokyo Institute of Technology,Japan,Asia
+Eindhoven University of Technology,Netherlands,Europe
+University of Hawaiʻi at Mānoa,United States,North America
+University of California-Riverside,United States,North America
+University of Geneva,Switzerland,Europe
+KU Leuven,Belgium,Europe
+Nanjing University,China,Asia
+Queen Mary University of London,United Kingdom,Europe
+Michigan State University,United States,North America
+Technical University of Denmark,Denmark,Europe
+Ghent University,Belgium,Europe
+Lancaster University,United Kingdom,Europe
+Leiden University,Netherlands,Europe
+University of Alberta,Canada,North America
+University of Glasgow,United Kingdom,Europe
+Stockholm University,Sweden,Europe
+Osaka University,Japan,Asia
+University of Victoria,Canada,North America
+Tohoku University,Japan,Asia
+University of Freiburg,Germany,Europe
+University of Iowa,United States,North America
+University of Bergen,Norway,Europe
+University of Lausanne,Switzerland,Europe
+University of Sheffield,United Kingdom,Europe
+University of Montreal,Canada,North America
+University of Dundee,United Kingdom,Europe
+University of Barcelona,Spain,Europe
+Utrecht University,Netherlands,Europe
+University of Auckland,New Zealand,Oceania
+University of Birmingham,United Kingdom,Europe
+Alexandria University,Egypt,Africa
+Uppsala University,Sweden,Europe
+Hong Kong Polytechnic University,Hong Kong,Asia
+University of Aberdeen,United Kingdom,Europe
+Delft University of Technology,Netherlands,Europe
+Birkbeck-University of London,United Kingdom,Europe
+Newcastle University,United Kingdom,Europe
+Pompeu Fabra University,Spain,Europe
+Indiana University,United States,North America
+Iowa State University,United States,North America
+Erasmus University Rotterdam,Netherlands,Europe
+University of Delaware,United States,North America
+Boston College,United States,North America
+National Sun Yat-Sen University,Taiwan,Asia
+Georgetown University,United States,North America
+University of Amsterdam,Netherlands,Europe
+University of Liverpool,United Kingdom,Europe
+Aarhus University,Denmark,Europe
+University of Leeds,United Kingdom,Europe
+University of Würzburg,Germany,Europe
+University of Groningen,Netherlands,Europe
+Sun Yat-sen University,China,Asia
+Goethe University Frankfurt,Germany,Europe
+Bielefeld University,Germany,Europe
+University of East Anglia,United Kingdom,Europe
+University of Nottingham,United Kingdom,Europe
+University of Copenhagen,Denmark,Europe
+Humboldt University of Berlin,Germany,Europe
+Monash University,Australia,Oceania
+University of Bonn,Germany,Europe
+National Chiao Tung University,Taiwan,Asia
+RWTH Aachen University,Germany,Europe
+Middle East Technical University,Turkey,Asia
+University of Exeter,United Kingdom,Europe
+University of Twente,Netherlands,Europe
+University of Konstanz,Germany,Europe
+Karlsruhe Institute of Technology,Germany,Europe
+University of Innsbruck,Austria,Europe
+University of Tübingen,Germany,Europe
+Drexel University,United States,North America
+Dalhousie University,Canada,North America
+KTH Royal Institute of Technology,Sweden,Europe
+University of Vienna,Austria,Europe
+Zhejiang University,China,Asia
+Simon Fraser University,Canada,North America
+Swedish University of Agricultural Sciences,Sweden,Europe
+University of Wisconsin-Madison,United States,North America
+University of Texas at Austin,United States,North America
+University of Rochester,United States,North America
+University of Bern,Switzerland,Europe
+Hebrew University of Jerusalem,Israel,Asia
+University of Florida,United States,North America
+Brandeis University,United States,North America
+Chinese University of Hong Kong,Hong Kong,Asia
+Free University of Berlin,Germany,Europe
+University of Warwick,United Kingdom,Europe
+Radboud University Nijmegen,Netherlands,Europe
+Texas A&M University,United States,North America
+University of Reading,United Kingdom,Europe
+Tel Aviv University,Israel,Asia
+Université Catholique de Louvain,Belgium,Europe
+University of Miami,United States,North America
+Queen’s University,Canada,North America
+University of São Paulo,Brazil,South America
+University of Oslo,Norway,Europe
+University of Ottawa,Canada,North America
+City University of Hong Kong,Hong Kong,Asia
+Maastricht University,Netherlands,Europe
+University of Leicester,United Kingdom,Europe
+Autonomous University of Barcelona,Spain,Europe
+Cardiff University,United Kingdom,Europe
+Colorado School of Mines,United States,North America
+Nagoya University,Japan,Asia
+Technion Israel Institute of Technology,Israel,Asia
+Tulane University,United States,North America
+Ulm University,Germany,Europe
+Umeå University,Sweden,Europe
+University at Buffalo,United States,North America
+University of Essex,United Kingdom,Europe
+University of Georgia,United States,North America
+University of Gothenburg,Sweden,Europe
+University of Otago,New Zealand,Oceania
+University of Strasbourg,France,Europe
+University of Waterloo,Canada,North America
+Université Libre de Bruxelles,Belgium,Europe
+Carleton University,Canada,North America
+Chalmers University of Technology,Sweden,Europe
+Creighton University,United States,North America
+Fudan University,China,Asia
+Korea University,South Korea,Asia
+Macquarie University,Australia,Oceania
+Tokyo Metropolitan University,Japan,Asia
+University of Bologna,Italy,Europe
+University of Calgary,Canada,North America
+University of Milan,Italy,Europe
+University of Milan-Bicocca,Italy,Europe
+University of Padua,Italy,Europe
+University of Trieste,Italy,Europe
+Bangor University,United Kingdom,Europe
+Brunel University London,United Kingdom,Europe
+Johannes Kepler University of Linz,Austria,Europe
+Kyushu University,Japan,Asia
+Norwegian University of Science and Technology,Norway,Europe
+Queen’s University Belfast,United Kingdom,Europe
+Ruhr University Bochum,Germany,Europe
+Stellenbosch University,South Africa,Africa
+Tilburg University,Netherlands,Europe
+TU Dresden,Germany,Europe
+University of Bath,United Kingdom,Europe
+University of Graz,Austria,Europe
+University of Kiel,Germany,Europe
+University of Southern Denmark,Denmark,Europe
+University of Texas at Dallas,United States,North America
+University of the Witwatersrand,South Africa,Africa
+University of Tsukuba,Japan,Asia
+University of Wollongong,Australia,Oceania
+Victoria University of Wellington,New Zealand,Oceania
+Virginia Polytechnic Institute and State University,United States,North America
+Wayne State University,United States,North America
+Aberystwyth University,United Kingdom,Europe
+Autonomous University of Madrid,Spain,Europe
+Hokkaido University,Japan,Asia
+Istanbul Technical University,Turkey,Asia
+Montpellier University,France,Europe
+Queensland University of Technology,Australia,Oceania
+Technical University of Darmstadt,Germany,Europe
+Tokyo Medical and Dental University (TMDU),Japan,Asia
+UiT The Arctic University of Norway,Norway,Europe
+University of Antwerp,Belgium,Europe
+University of Crete,Greece,Europe
+University of Guelph,Canada,North America
+University of Iceland,Iceland,Europe
+University of Kansas,United States,North America
+University of Münster,Germany,Europe
+University of Newcastle,Australia,Oceania
+University of Trento,Italy,Europe
+York University,Canada,North America
+Aalborg University,Denmark,Europe
+Aalto University,Finland,Europe
+Boğaziçi University,Turkey,Asia
+Charles Darwin University,Australia,Oceania
+George Mason University,United States,North America
+Jagiellonian University,Poland,Europe
+Keele University,United Kingdom,Europe
+Keio University,Japan,Asia
+Lehigh University,United States,North America
+Linköping University,Sweden,Europe
+National Taiwan University of Science and Technology (Taiwan Tech),Taiwan,Asia
+Sapienza University of Rome,Italy,Europe
+Shanghai Jiao Tong University,China,Asia
+Sharif University of Technology,Iran,Asia
+Sungkyunkwan University (SKKU),South Korea,Asia
+University College Cork,Ireland,Europe
+University of Aveiro,Portugal,Europe
+University of Canterbury,New Zealand,Oceania
+University of Eastern Finland,Finland,Europe
+University of Ferrara,Italy,Europe
+University of Hertfordshire,United Kingdom,Europe
+University of Houston,United States,North America
+University of Liège,Belgium,Europe
+University of Manitoba,Canada,North America
+University of Maryland-Baltimore County,United States,North America
+University of Modena and Reggio Emilia,Italy,Europe
+University of Pisa,Italy,Europe
+University of Porto,Portugal,Europe
+University of Stirling,United Kingdom,Europe
+University of Surrey,United Kingdom,Europe
+University of Tasmania,Australia,Oceania
+University of Valencia,Spain,Europe
+University of Waikato,New Zealand,Oceania
+University of Warsaw,Poland,Europe
+Vrije Universiteit Brussel,Belgium,Europe
+Washington State University,United States,North America
+Aston University,United Kingdom,Europe
+Curtin University,Australia,Oceania
+Deakin University,Australia,Oceania
+Flinders University,Australia,Oceania
+Heriot-Watt University,United Kingdom,Europe
+Kansas State University,United States,North America
+Liverpool John Moores University,United Kingdom,Europe
+Loughborough University,United Kingdom,Europe
+Massey University,New Zealand,Oceania
+National Central University,Taiwan,Asia
+Polytechnic University of Valencia,Spain,Europe
+Swinburne University of Technology,Australia,Oceania
+University of Bari Aldo Moro,Italy,Europe
+University of Salento,Italy,Europe
+University of South Australia,Australia,Oceania
+University of Strathclyde,United Kingdom,Europe
+University of Tartu,Estonia,Europe
+University of Turku,Finland,Europe
+Waseda University,Japan,Asia
+Wuhan University,China,Asia
+St George’s-University of London,United Kingdom,Europe
+University of Erlangen-Nuremberg,Germany,Europe
+Florida Institute of Technology,United States,North America
+Koç University,Turkey,Asia
+University of Connecticut,United States,North America
+University of Turin,Italy,Europe
+Claude Bernard University Lyon 1,France,Europe
+King Abdulaziz University,Saudi Arabia,Asia
+Medical University of Vienna,Austria,Europe
+Murdoch University,Australia,Oceania
+Renmin University of China,China,Asia
+University of Fribourg,Switzerland,Europe
+University of Pavia,Italy,Europe
+University of Portsmouth,United Kingdom,Europe
+King Mongkut’s University of Technology Thonburi,Thailand,Asia
+Temple University,United States,North America
+University of Duisburg-Essen,Germany,Europe
+University of Jyväskylä,Finland,Europe
+University of Minho,Portugal,Europe
+University of Technology Sydney,Australia,Oceania
+University of the Andes-Colombia,Colombia,South America
+University of Vigo,Spain,Europe
+Panjab University,India,Asia
+University of Cologne,Germany,Europe
+University of Nebraska-Lincoln,United States,North America
+Hanyang University,South Korea,Asia
+San Diego State University,United States,North America
+University of Florence,Italy,Europe
+University of Navarra,Spain,Europe

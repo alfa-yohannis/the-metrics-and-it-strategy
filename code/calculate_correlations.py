@@ -5,6 +5,10 @@ import networkx as nx
 
 # Load the dataset
 file_path = 'universities2.csv'  # Replace with the path to your CSV file
+# file_path = 'universities_declining.csv'  
+# file_path = 'universities_improving.csv'  
+# file_path = 'universities_stable.csv'  
+
 data = pd.read_csv(file_path)
 
 # Select only the specified columns
@@ -77,22 +81,22 @@ sorted_influence = sorted(node_influence.items(), key=lambda x: x[1], reverse=Tr
 for variable, influence in sorted_influence:
     print(f"{variable}: unnormalized influence = {influence:.2f}, normalized influence = {normalized_influence[variable]:.2f}")
 
-# Draw the graph with edge thickness and normalized node sizes
-plt.figure(figsize=(16, 6))  # Set resolution to 16:9
-pos = nx.spring_layout(graph, seed=42)
-nx.draw(
-    graph, pos, with_labels=True,
-    node_size=[700 + (5000 * normalized_influence[node]) for node in graph.nodes()],  # Node size based on normalized influence
-    font_size=10, font_weight='bold',
-    width=[d['weight'] * 5 for u, v, d in graph.edges(data=True)],  # Adjust edge thickness
-    node_color="lightblue"  # Use lighter node color
-)
-nx.draw_networkx_edge_labels(
-    graph, pos, edge_labels={(u, v): f"{d['weight']:.2f}" for u, v, d in graph.edges(data=True)}
-)
-plt.title('Correlation Graph of Variables (Significant Only)')
-plt.tight_layout(pad=2.0)  # Add more padding
+# # Draw the graph with edge thickness and normalized node sizes
+# plt.figure(figsize=(16, 6))  # Set resolution to 16:9
+# pos = nx.spring_layout(graph, seed=42)
+# nx.draw(
+#     graph, pos, with_labels=True,
+#     node_size=[700 + (5000 * normalized_influence[node]) for node in graph.nodes()],  # Node size based on normalized influence
+#     font_size=10, font_weight='bold',
+#     width=[d['weight'] * 5 for u, v, d in graph.edges(data=True)],  # Adjust edge thickness
+#     node_color="lightblue"  # Use lighter node color
+# )
+# nx.draw_networkx_edge_labels(
+#     graph, pos, edge_labels={(u, v): f"{d['weight']:.2f}" for u, v, d in graph.edges(data=True)}
+# )
+# plt.title('Correlation Graph of Variables (Significant Only)')
+# plt.tight_layout(pad=2.0)  # Add more padding
 
-# Export the diagram to a PDF
-plt.savefig("correlation_graph.pdf")
-plt.show()
+# # Export the diagram to a PDF
+# plt.savefig("correlation_graph.pdf")
+# plt.show()
