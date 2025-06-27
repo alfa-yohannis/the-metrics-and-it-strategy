@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 
 # Load the dataset
-file_path = 'universities2.csv'  # Replace with the path to your CSV file
+file_path = 'universities_le_10_year.csv'  # Replace with the path to your CSV file
 # file_path = 'universities_declining.csv'  
 # file_path = 'universities_improving.csv'  
 # file_path = 'universities_stable.csv'  
@@ -59,17 +59,23 @@ for variable, corr_list in grouped_correlations.items():
         print(f"  {col2}: correlation = {corr:.2f}, p-value = {p_value:.2f} {significance}")
 
 # Calculate total influence for node sizes
-threshold = 0.1  # Minimum absolute correlation value to draw an edge
+threshold = 0.0 # Minimum absolute correlation value to draw an edge
 graph = nx.Graph()
 node_influence = {}
 
 # Add nodes and edges based on correlations
 for (col1, col2), values in correlations.items():
-    if abs(values['correlation']) >= threshold and values['p_value'] <= 0.05:  # Only significant correlations
-        graph.add_edge(col1, col2, weight=abs(values['correlation']))
-        node_influence[col1] = node_influence.get(col1, 0) + abs(values['correlation'])
-        node_influence[col2] = node_influence.get(col2, 0) + abs(values['correlation'])
+    if abs(values['correlation']) >= threshold and values['p_value'] <= 0.1:  # Only significant correlations
+        weight = abs(values['correlation'])
+        print(f"Adding edge: {col1} - {col2} with weight {abs(weight):.2f}")
+        graph.add_edge(col1, col2, weight=weight)
+        node_influence[col1] = node_influence.get(col1, 0) + weight 
+        # node_influence[col2] = node_influence.get(col2, 0) + weight
 
+# add self-influence to each node
+for node in node_influence:
+    node_influence[node] += 1
+    
 # Normalize node influence for sizes
 max_influence = max(node_influence.values())
 min_influence = min(node_influence.values())
@@ -79,24 +85,5 @@ normalized_influence = {node: (influence - min_influence) / (max_influence - min
 print("\nVariables ordered by total influence:")
 sorted_influence = sorted(node_influence.items(), key=lambda x: x[1], reverse=True)
 for variable, influence in sorted_influence:
+    influence_with_self = influence + normalized_influence.get(variable, 0)  # Add self-influence for clarity
     print(f"{variable}: unnormalized influence = {influence:.2f}, normalized influence = {normalized_influence[variable]:.2f}")
-
-# # Draw the graph with edge thickness and normalized node sizes
-# plt.figure(figsize=(16, 6))  # Set resolution to 16:9
-# pos = nx.spring_layout(graph, seed=42)
-# nx.draw(
-#     graph, pos, with_labels=True,
-#     node_size=[700 + (5000 * normalized_influence[node]) for node in graph.nodes()],  # Node size based on normalized influence
-#     font_size=10, font_weight='bold',
-#     width=[d['weight'] * 5 for u, v, d in graph.edges(data=True)],  # Adjust edge thickness
-#     node_color="lightblue"  # Use lighter node color
-# )
-# nx.draw_networkx_edge_labels(
-#     graph, pos, edge_labels={(u, v): f"{d['weight']:.2f}" for u, v, d in graph.edges(data=True)}
-# )
-# plt.title('Correlation Graph of Variables (Significant Only)')
-# plt.tight_layout(pad=2.0)  # Add more padding
-
-# # Export the diagram to a PDF
-# plt.savefig("correlation_graph.pdf")
-# plt.show()

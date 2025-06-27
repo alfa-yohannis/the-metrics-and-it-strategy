@@ -6,7 +6,7 @@ import networkx as nx
 # ------------------------------------------------------------------
 # 1. Load the dataset
 # ------------------------------------------------------------------
-file_path = 'universities2.csv'         # <- path to your CSV file
+file_path = 'universities_le_10_year.csv'         # <- path to your CSV file
 # file_path = 'universities_declining.csv'
 # file_path = 'universities_improving.csv'
 # file_path = 'universities_stable.csv'
@@ -24,7 +24,7 @@ columns_of_interest = [
 data = data[columns_of_interest]
 
 # ------------------------------------------------------------------
-# 3. NEW LINE: limit the analysis to University of Cambridge only
+# 3. Limit the analysis to one university
 # ------------------------------------------------------------------
 data = data[data['name'] == 'Wuhan University']
 
@@ -59,24 +59,34 @@ for var, lst in grouped.items():
         print(f"  {c2}: correlation = {rho:.2f}, p-value = {p:.2f} {format_significance(p)}")
 
 # ------------------------------------------------------------------
-# 6. Build graph and compute node influence
+# 6. Build graph and compute node influence (no double-counting)
 # ------------------------------------------------------------------
-threshold = 0.1  # absolute rho threshold
-G = nx.Graph()
-influence = {}
+# Calculate total influence for node sizes
+threshold = 0.0 # Minimum absolute correlation value to draw an edge
+graph = nx.Graph()
+node_influence = {}
 
-for (c1, c2), vals in correlations.items():
-    if abs(vals['correlation']) >= threshold and vals['p_value'] <= 0.05:
-        G.add_edge(c1, c2, weight=abs(vals['correlation']))
-        influence[c1] = influence.get(c1, 0) + abs(vals['correlation'])
-        influence[c2] = influence.get(c2, 0) + abs(vals['correlation'])
+# Add nodes and edges based on correlations
+for (col1, col2), values in correlations.items():
+    if abs(values['correlation']) >= threshold and values['p_value'] <= 0.1:  # Only significant correlations
+        weight = abs(values['correlation'])
+        print(f"Adding edge: {col1} - {col2} with weight {abs(weight):.2f}")
+        graph.add_edge(col1, col2, weight=weight)
+        node_influence[col1] = node_influence.get(col1, 0) + weight 
+        # node_influence[col2] = node_influence.get(col2, 0) + weight
 
-if influence:  # avoid zero‐division if the graph is empty
-    max_inf, min_inf = max(influence.values()), min(influence.values())
-    norm_inf = {n: (v - min_inf) / (max_inf - min_inf) for n, v in influence.items()}
-else:
-    norm_inf = {}
+# add self-influence to each node
+for node in node_influence:
+    node_influence[node] += 1
+    
+# Normalize node influence for sizes
+max_influence = max(node_influence.values())
+min_influence = min(node_influence.values())
+normalized_influence = {node: (influence - min_influence) / (max_influence - min_influence) for node, influence in node_influence.items()}
 
+# Print variables ordered by total influence
 print("\nVariables ordered by total influence:")
-for var, inf in sorted(influence.items(), key=lambda x: x[1], reverse=True):
-    print(f"{var}: unnormalized influence = {inf:.2f}, normalized influence = {norm_inf[var]:.2f}")
+sorted_influence = sorted(node_influence.items(), key=lambda x: x[1], reverse=True)
+for variable, influence in sorted_influence:
+    influence_with_self = influence + normalized_influence.get(variable, 0)  # Add self-influence for clarity
+    print(f"{variable}: unnormalized influence = {influence:.2f}, normalized influence = {normalized_influence[variable]:.2f}")
